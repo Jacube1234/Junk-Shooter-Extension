@@ -1,22 +1,36 @@
 # Junk-Shooter-Extension
+# Junk-Shooter-Extension
 
-Welcome to our game repository! This project is being developed using the **Godot Engine** and packaged as a **Google Chrome Popup Extension**.
-
----
-
-Our Team
-* **[Jacob/Jacube1234]** — Programmer
-* **[Spencer/Spennygpro]** — Artist
-* **[Daniil/kil-ua3]** — Game Designer / Tester
+An action-packed space arcade game that lives right inside your Google Chrome toolbar. Play instantly during quick breaks with no internet required.
 
 ---
 
-Repository Structure
-* `/godot_project` — Source files and assets for the Godot engine. All core development happens here.
-* `/chrome_extension` — The extension build folder. Contains `manifest.json`, `icon.png`, and receives the HTML5 exports from Godot.
+## About the Game
+You are stationed in the center of the screen with a 360-degree top-down view. Dangerous space junk is constantly drifting towards you from all sides. Spin around, aim, shoot, and destroy the debris to survive and get the highest score.
+
+### Screenshots and Gameplay
+<p align="center">
+  <img src="images/gameplay_preview.gif" width="45%" alt="Gameplay Preview" />
+  <img src="images/main_menu.png" width="45%" alt="Main Menu" />
+</p>
+
 ---
 
-## Information about Junk-Shooter-Extension
+## How to Install and Play
 
-Basically, this is a top-down view game where the character is in the middle; the player can rotate the character and shoot. The junk from space will go towards the player, and you need to shoot it to get points. 
+Since the game is in development, you can load it into your browser manually using these steps:
+
+### Step 1: Download the Files
+1. Download this repository as a ZIP file to your computer.
+2. Extract the archive into any regular folder.
+
+### Step 2: Enable Developer Mode in Chrome
+1. Open Google Chrome and go to the link: chrome://extensions/
+2. In the top-right corner, toggle the " Developer mode " switch ON.
+
+### Step 3: Load the Extension
+1. In the top-left corner, click the "Load unpacked" button.
+2. Select the "chrome_extension" folder from the extracted archive.
+3. Click the extension icon in your browser toolbar, pin Junk-Shooter, and click it to play.
+
 
