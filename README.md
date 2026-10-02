@@ -1,5 +1,4 @@
 # Junk-Shooter-Extension
-# Junk-Shooter-Extension
 
 An action-packed space arcade game that lives right inside your Google Chrome toolbar. Play instantly during quick breaks with no internet required.
 
