@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bj80487p2se68"]
+
+[ext_resource type="Script" uid="uid://i0y3hppsx6sf" path="res://module.gd" id="1_cbhdo"]
+[ext_resource type="Texture2D" uid="uid://bdolbnbll1aoi" path="res://art/Module1.svg" id="1_w1di8"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yih1u"]
+radius = 49.0
+height = 181.01935
+
+[node name="Module" type="RigidBody2D" unique_id=849879898 groups=["junk"]]
+gravity_scale = 0.0
+script = ExtResource("1_cbhdo")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1826773766]
+rotation = -0.7853982
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("1_w1di8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1984852196]
+rotation = -2.3561945
+shape = SubResource("CapsuleShape2D_yih1u")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=187941107]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://bjp3td2ncvq4u"]
+
+[ext_resource type="Script" uid="uid://bfupvn5qem0f2" path="res://title_screen.gd" id="1_v6p8y"]
+[ext_resource type="FontFile" uid="uid://cgkrhslyr04xd" path="res://fonts/Xolonium-Regular.ttf" id="2_ak2if"]
+
+[node name="Control" type="Control" unique_id=893349935]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_v6p8y")
+
+[node name="Button" type="Button" parent="." unique_id=1242918245]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 280.0
+offset_top = 260.0
+offset_right = 480.0
+offset_bottom = 330.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_ak2if")
+theme_override_font_sizes/font_size = 50
+text = "Start"
+
+[node name="Message" type="Label" parent="." unique_id=1925424004]
+custom_minimum_size = Vector2(700, 0)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_top = 150.0
+offset_right = 780.0
+offset_bottom = 219.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_ak2if")
+theme_override_font_sizes/font_size = 50
+text = "Junk Shooter"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=835272285]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("2_ak2if")
+theme_override_font_sizes/font_size = 50
+text = "0"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

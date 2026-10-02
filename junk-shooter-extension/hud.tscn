@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://c0qj01h71nfok"]
+
+[ext_resource type="Script" uid="uid://cst4jnqqemvft" path="res://hud.gd" id="1_37p78"]
+[ext_resource type="FontFile" uid="uid://cgkrhslyr04xd" path="res://fonts/Xolonium-Regular.ttf" id="2_64ctp"]
+
+[node name="HUD" type="CanvasLayer" unique_id=174445754]
+script = ExtResource("1_37p78")
+
+[node name="MessageTimer" type="Timer" parent="." unique_id=1157264755]
+wait_time = 2.0
+one_shot = true
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=565826363]
+offset_right = 40.0
+offset_bottom = 23.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_64ctp")
+theme_override_font_sizes/font_size = 50
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="timeout" from="MessageTimer" to="." method="_on_message_timer_timeout"]
