@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://xuyr8c2w74sb"]
+
+[ext_resource type="Script" uid="uid://6ubik7r1wlwn" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://c7mm80l3v65yg" path="res://player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://dnjcpablq6si3" path="res://junk.tscn" id="2_h2yge"]
+
+[sub_resource type="Curve2D" id="Curve2D_0xm2m"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 780, 0, 0, 0, 0, 0, 780, 559, 0, 0, 0, 0, 0, 560, 0, 0, 0, 0, 0, 0)
+}
+point_count = 5
+
+[node name="Main" type="Node" unique_id=381346994]
+script = ExtResource("1_0xm2m")
+junk_scene = ExtResource("2_h2yge")
+
+[node name="Player" parent="." unique_id=1051586462 instance=ExtResource("1_ig7tw")]
+
+[node name="StartPosition" type="Marker2D" parent="." unique_id=622813795]
+position = Vector2(390, 280)
+
+[node name="JunkPath" type="Path2D" parent="." unique_id=849951506]
+curve = SubResource("Curve2D_0xm2m")
+
+[node name="JunkSpawnLocation" type="PathFollow2D" parent="JunkPath" unique_id=1463392413]
+
+[node name="JunkTimer" type="Timer" parent="." unique_id=1580687787]
+
+[node name="StartTimer" type="Timer" parent="." unique_id=574494564]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="hit" from="Player" to="." method="game_over"]
+[connection signal="timeout" from="JunkTimer" to="." method="_on_junk_timer_timeout"]
+[connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]
