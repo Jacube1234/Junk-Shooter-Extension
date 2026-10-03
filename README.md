@@ -9,8 +9,9 @@ You are stationed in the center of the screen with a 360-degree top-down view. D
 
 ### Screenshots and Gameplay
 <p align="center">
-  <img src="images/gameplay_preview.gif" width="45%" alt="Gameplay Preview" />
-  <img src="images/main_menu.png" width="45%" alt="Main Menu" />
+  <img width="320"  alt="image" src="https://github.com/user-attachments/assets/bbe7e956-20f2-47f3-9cf7-ee0662239d5b" alt="Gameplay Screenshot" />
+  <img width="300"  alt="image" src="https://github.com/user-attachments/assets/a96b8f64-e0b4-4140-85d1-9c87dc41f528" alt="Starting page" />
+
 </p>
 
 ---
