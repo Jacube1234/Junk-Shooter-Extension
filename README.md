@@ -32,4 +32,11 @@ Since the game is in development, you can load it into your browser manually usi
 2. Select the "chrome_extension" folder from the extracted archive.
 3. Click the extension icon in your browser toolbar, pin Junk-Shooter, and click it to play.
 
+## Credits
+@jacube1234 - Game design, graphics, ideas
+@kil-ua3 - Chrome extension port, lots of ideas
+@spencergoodall673-dev - Music production, ideas
+
+## Other
+I am tired
 
