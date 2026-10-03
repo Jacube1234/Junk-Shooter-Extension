@@ -57,7 +57,7 @@ func _on_junk_timer_timeout():
 	var player_position = $Player.position
 	var direction = junk.position.angle_to_point(player_position)
 
-	var velocity = Vector2(randf_range(150.0, 180.0), 0.0)
+	var velocity = Vector2(randf_range(100.0, 150.0), 0.0)
 	junk.linear_velocity = velocity.rotated(direction)
 
 	add_child(junk)

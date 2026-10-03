@@ -5,8 +5,8 @@
 [ext_resource type="AudioStream" uid="uid://bbyki3ichumyy" path="res://music/shooting.wav" id="3_i3pqv"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_onrkg"]
-radius = 61.0
-height = 128.0
+radius = 46.0
+height = 92.0
 
 [node name="Player" type="Area2D" unique_id=1051586462]
 script = ExtResource("1_i3pqv")

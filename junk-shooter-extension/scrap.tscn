@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://dlprlk7tdwl3y" path="res://art/Scrap.svg" id="2_dault"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_etscd"]
-radius = 77.0
-height = 164.0
+radius = 58.0
+height = 136.0
 
 [node name="Scrap" type="RigidBody2D" unique_id=770620136 groups=["junk"]]
 collision_mask = 0

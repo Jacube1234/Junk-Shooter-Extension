@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://cluexv8e4ejqq" path="res://art/Telescope.svg" id="2_mipnb"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_b2h2w"]
-radius = 47.0
-height = 142.0
+radius = 39.0
+height = 110.0
 
 [node name="Telescope" type="RigidBody2D" unique_id=770620136 groups=["junk"]]
 collision_mask = 0
