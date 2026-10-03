@@ -1,6 +1,6 @@
 # Junk-Shooter-Extension
 
-An action-packed space arcade game that lives right inside your Google Chrome toolbar. Play instantly during quick breaks with no internet required.
+An space arcade game that lives right inside your Google Chrome toolbar. No wifi or website required to play.
 
 ---
 
@@ -21,8 +21,7 @@ You are stationed in the center of the screen with a 360-degree top-down view. D
 Since the game is in development, you can load it into your browser manually using these steps:
 
 ### Step 1: Download the Files
-1. Download this repository as a ZIP file to your computer.
-2. Extract the archive into any regular folder.
+1. Download this repository as a ZIP file to your computer or download the `"chrome_extension" folder.
 
 ### Step 2: Enable Developer Mode in Chrome
 1. Open Google Chrome and go to the link: chrome://extensions/
